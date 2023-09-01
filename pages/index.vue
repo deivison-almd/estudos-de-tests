@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <div>
-      <Component />
       <Login />
+      <!--<Form />-->
     </div>
   </v-app>
 </template>
@@ -10,12 +10,13 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import Component from '~/components/Component.vue'
+import Modal from '~/components/Modal.vue'
+import Formulario from '~/components/Formulario.vue'
 import Login from '~/pages/Login/Login.vue'
 
 export default Vue.extend({
   name: 'idexPage',
-  components: { Component, Login },
+  components: { Modal, Login, Formulario },
 })
 </script>
 

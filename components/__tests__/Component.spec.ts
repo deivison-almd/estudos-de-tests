@@ -1,8 +1,8 @@
 import {render, fireEvent, screen} from '@testing-library/vue'
-import Component from '~/components/Component.vue'
+import Componente from '~/components/Componente.vue'
 
 test('properly handles v-model', async () => {
-  render(Component)
+  render(Componente)
 
   // Asserts initial state.
   screen.getByText('Hi, my name is Alice')
